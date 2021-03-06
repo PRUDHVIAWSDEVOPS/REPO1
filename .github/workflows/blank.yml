@@ -45,7 +45,7 @@ jobs:
         run: mvn -version
         
       - name: docker version
-        run: docker -version
+        run:  service docker start
 
       - name: terraform version
         run: terraform -version
