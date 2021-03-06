@@ -44,7 +44,5 @@ jobs:
       - name: maven version
         run: mvn -version
 
-      - name: docker version
-        run: docker -version
       - name: terraform version
         run: terraform -version
