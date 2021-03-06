@@ -21,6 +21,9 @@ jobs:
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
+
+    
+ 
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
@@ -34,3 +37,15 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          
+          
+    - name: java version     
+      run: java -version
+    - name: maven version
+      run: mvn -version
+    - name: python version
+      run: python -version
+    - name: docker version
+      run: docker -version
+    - name: terraform version
+      run: terraform -version
